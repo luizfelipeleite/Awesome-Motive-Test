@@ -1,0 +1,59 @@
+.form-pages {
+  .page-intro {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding-top: 53px;
+    padding-bottom: 330px;
+
+    .inner-container {
+      max-width: 626px;
+      margin: 0 auto;
+
+      .title {
+        margin-bottom: 40px;
+  
+        .title-img-wrapper {
+          position: relative;
+  
+          &::after {
+            content: '';
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            right: 0;
+            top: 0;
+            width: 42px;
+            height: 22px;
+            background-image: url('../img/pro-badge.svg');
+            background-size: 42px 22px;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+  
+      .description {
+        font-size: 20px;
+        line-height: 28px;
+        opacity: 0.8;
+        margin-bottom: 40px;
+      }
+  
+      .cta-buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .feature-video {
+    .video-wrapper {
+      margin-top: -250px;
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+    }
+
+    .video-player {
+      display: none;
+    }
+  }
+}

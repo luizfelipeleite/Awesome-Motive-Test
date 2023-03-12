@@ -1,0 +1,32 @@
+.btn {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 40px;
+  width: 290px;
+  height: 64px;
+  display: inline-block;
+  
+  &.btn-primary {
+    background-color: #e27730;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: white;
+
+    &:hover {
+      background-color: #cd631d;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #777;
+
+    &:hover {
+      background-color: #fefdfd;
+    }
+  }
+}

@@ -46,6 +46,11 @@ function watch() {
   gulp.watch(paths.scripts.src, scripts);
 }
 
+function build() {
+  return gulp.series(styles, scripts);
+}
+
 exports.styles = styles;
 exports.scripts = scripts;
-exports.watch = watch;
+exports.build = build();
+exports.watch = gulp.series(build(), watch);

@@ -9,10 +9,11 @@
   width: 290px;
   height: 64px;
   display: inline-block;
+  max-width: 100%;
   
   &.btn-primary {
     background-color: #e27730;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(0 0 0 / 20%);
     color: white;
 
     &:hover {

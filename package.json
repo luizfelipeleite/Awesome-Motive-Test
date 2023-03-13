@@ -1,13 +1,8 @@
 {
   "scripts": {
-    "build": "npm run ts && npm run sass",
-    "sass": "sass --no-source-map assets/scss/index.scss assets/css/index.css",
-    "ts": "tsc",
-    "watch:sass": "sass --watch --no-source-map assets/scss/index.scss assets/css/index.css",
-    "watch:ts": "tsc  --no-source-map assets/scss/index.scss assets/css/index.css",
     "format": "npm run format:js && npm run format:scss",
-    "format:js": "eslint resources/scripts --ext .ts --fix",
-    "format:scss": "stylelint \"resources/**/*.{scss}\" --fix"
+    "format:js": "eslint assets/ts --ext .ts --fix",
+    "format:scss": "stylelint \"assets/scss/*.scss\" --fix"
   },
   "devDependencies": {
     "@types/node": "^18.15.0",
@@ -31,6 +26,7 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "gulp-typescript": "^6.0.0-alpha.1",
+    "stylelint-config-standard-scss": "^7.0.1",
     "tsify": "^5.0.4",
     "vinyl-source-stream": "^2.0.0"
   }

@@ -324,7 +324,9 @@ dl {
   margin-top: 0;
 }
 
-img {
+img,
+svg {
+  vertical-align: middle;
   max-width: 100%;
 }
 
@@ -437,11 +439,146 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
+.form-pages .feature-video {
+  margin-bottom: 100px;
+}
 .form-pages .feature-video .video-wrapper {
-  margin-top: -250px;
+  margin-top: -280px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+}
+.form-pages .feature-video .video-wrapper .feature-image-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+.form-pages .feature-video .video-wrapper .feature-image-wrapper .feature-image {
   border-radius: 6px;
 }
-.form-pages .feature-video .video-player {
+.form-pages .feature-video .video-wrapper .feature-image-wrapper .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0px 5px 25px rgba(0, 0, 0, 0.15));
+}
+.form-pages .feature-video .video-wrapper .video-player {
   display: none;
+  border-radius: 6px;
+}
+.form-pages .feature-video .video-wrapper:hover {
+  filter: drop-shadow(0px 5px 25px #bcbcbc);
+}
+.form-pages .feature-video .video-wrapper:hover .play-button {
+  filter: drop-shadow(0px 0px 30px #fff);
+}
+.form-pages .feature-blocks {
+  margin-bottom: 100px;
+}
+.form-pages .feature-blocks .feature-grid {
+  display: grid;
+  grid-template-columns: 304px 352px 304px;
+  text-align: center;
+}
+@media (max-width: 991.98px) {
+  .form-pages .feature-blocks .feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767.98px) {
+  .form-pages .feature-blocks .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.form-pages .feature-blocks .feature-grid .feature-column {
+  padding-bottom: 48px;
+}
+@media (max-width: 767.98px) {
+  .form-pages .feature-blocks .feature-grid .feature-column {
+    border-bottom: 1px solid #ddd;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:last-child {
+    border-bottom: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .form-pages .feature-blocks .feature-grid .feature-column {
+    padding: 0 30px 30px;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:nth-child(even) {
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:nth-child(odd) {
+    border-bottom: 1px solid #ddd;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:nth-child(n+3) {
+    padding-top: 30px;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:nth-child(n+5) {
+    border-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .form-pages .feature-blocks .feature-grid .feature-column:nth-child(-n+3) {
+    border-bottom: 1px solid #ddd;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:nth-child(3n+1) {
+    border-right: 1px solid #ddd;
+    padding-right: 51px;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:nth-child(3n) {
+    border-left: 1px solid #ddd;
+    padding-left: 51px;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:nth-child(n+7) {
+    border-top: 1px solid #ddd;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:nth-child(n+4) {
+    padding-top: 48px;
+    padding-bottom: 0;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:nth-child(2), .form-pages .feature-blocks .feature-grid .feature-column:nth-child(5) {
+    padding-right: 51px;
+    padding-left: 51px;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:first-child .feature-icon {
+    margin-bottom: 28.44px;
+    margin-top: 5px;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:nth-child(4) {
+    padding-top: 54px;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column:nth-child(4) .feature-icon {
+    margin-bottom: 26px;
+  }
+}
+.form-pages .feature-blocks .feature-grid .feature-column .feature-icon {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.form-pages .feature-blocks .feature-grid .feature-column h3 {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+@media (max-width: 767.98px) {
+  .form-pages .feature-blocks .feature-grid .feature-column h3 {
+    max-width: none;
+  }
+  .form-pages .feature-blocks .feature-grid .feature-column h3 br {
+    display: none;
+  }
+}
+.form-pages .feature-blocks .feature-grid .feature-column p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+  max-width: 250px;
+  margin: 0 auto;
+}
+@media (max-width: 767.98px) {
+  .form-pages .feature-blocks .feature-grid .feature-column p {
+    max-width: none;
+  }
 }

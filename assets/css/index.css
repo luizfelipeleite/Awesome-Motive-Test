@@ -328,6 +328,7 @@ img,
 svg {
   vertical-align: middle;
   max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -442,6 +443,11 @@ h3 {
 .form-pages .feature-video {
   margin-bottom: 100px;
 }
+@media (max-width: 767.98px) {
+  .form-pages .feature-video {
+    margin-bottom: 50px;
+  }
+}
 .form-pages .feature-video .video-wrapper {
   margin-top: -280px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
@@ -472,6 +478,11 @@ h3 {
 }
 .form-pages .feature-blocks {
   margin-bottom: 100px;
+}
+@media (max-width: 767.98px) {
+  .form-pages .feature-blocks {
+    margin-bottom: 50px;
+  }
 }
 .form-pages .feature-blocks .feature-grid {
   display: grid;
@@ -580,5 +591,85 @@ h3 {
 @media (max-width: 767.98px) {
   .form-pages .feature-blocks .feature-grid .feature-column p {
     max-width: none;
+  }
+}
+.form-pages .testimonials {
+  background: linear-gradient(180deg, #f8f8f8 0%, #fff 100%);
+  padding: 100px 0;
+}
+@media (max-width: 767.98px) {
+  .form-pages .testimonials {
+    padding: 50px 0;
+  }
+}
+.form-pages .testimonials .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+@media (max-width: 767.98px) {
+  .form-pages .testimonials .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+}
+.form-pages .testimonials .row .review {
+  padding: 30px;
+  width: 286.66px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 0;
+}
+@media (max-width: 767.98px) {
+  .form-pages .testimonials .row .review {
+    width: 100%;
+  }
+}
+.form-pages .testimonials .row .review .review-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.form-pages .testimonials .row .review .review-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-pages .testimonials .row .review .review-details .review-author {
+  font-size: 14px;
+  line-height: 17px;
+  color: #aaa;
+}
+.form-pages .testimonials .cta-buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 626px;
+  margin: 0 auto;
+}
+.form-pages .form-page-detail {
+  padding: 100px 0;
+  background-color: #f8f8f8;
+}
+@media (max-width: 767.98px) {
+  .form-pages .form-page-detail {
+    padding: 50px 0;
+  }
+}
+.form-pages .form-page-detail .row {
+  display: flex;
+  gap: 50px;
+}
+.form-pages .form-page-detail .row .col {
+  width: 50%;
+}
+@media (max-width: 767.98px) {
+  .form-pages .form-page-detail .row .col {
+    width: 100%;
   }
 }
